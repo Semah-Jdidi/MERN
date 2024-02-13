@@ -6,7 +6,7 @@ module.exports.findAllProducts = (req, res) =>{
     .catch(err => res.json(err))
 };
 
-module.exports.createUser = (req, res) => {
+module.exports.createProduct = (req, res) => {
   Product.create(req.body)
     .then(newProduct => res.json(newProduct))
     .catch(err => res.json(err))

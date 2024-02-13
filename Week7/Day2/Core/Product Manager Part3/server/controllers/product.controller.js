@@ -17,3 +17,15 @@ module.exports.createProduct = (req, res) => {
     .then(newProduct => res.status(200).json(newProduct))
     .catch(err => res.status(400).json(err))
 };
+
+module.exports.updateProduct = (req, res) => {
+  Product.findOneAndUpdate({_id: req.params.id}, req.body, {new: true})
+    .then(updatedProduct => res.status(200).json(updatedProduct))
+    .catch(err => res.status(400).json(err))
+};
+
+module.exports.deleteProduct = (req, res) => {
+  Product.deleteOne({_id: req.params.id})
+    .then(result => res.json(result))
+    .catch(err => res.json(err))
+}

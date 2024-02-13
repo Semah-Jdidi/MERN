@@ -1,0 +1,97 @@
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.FormStyle{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.FormStyle label{
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+  padding: 2rem;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.FormInput{
+  width: 15rem;
+  padding: 0.3rem;
+  height: 1.5rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.FormButton{
+  width: 10rem;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #407088;
+}
+
+.FormButton:hover{
+  cursor: pointer;
+}
+
+.ProductList{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.ProductListContainer{
+  width: 24%;
+  font-size: 24px;
+  background-color: #f67280;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.ProductListContainer h3 a{
+  text-decoration: none;
+  color: #f5f9ee;
+}
+
+.ProductListContainer h3 a:hover{
+  text-decoration: underline;
+}
+
+.ProductName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DeleteButton{
+  margin-left: 1.5rem;
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.DeleteButton:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.EditButton{
+  color:#407088;
+  text-decoration: none;
+  font-weight: bold;
+}
+.EditButton:hover{
+  text-decoration: underline;
+}
