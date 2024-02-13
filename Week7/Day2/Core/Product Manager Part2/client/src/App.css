@@ -25,6 +25,7 @@
 }
 
 .FormInput{
+  width: 15rem;
   padding: 0.3rem;
   height: 1.5rem;
   border: 2px solid black;
@@ -44,4 +45,26 @@
 
 .FormButton:hover{
   cursor: pointer;
+}
+
+.ProductList{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.ProductListContainer{
+  width: 25%;
+  font-size: 24px;
+  background-color: #f67280;
+  border-radius: 1rem;
+}
+
+.ProductListContainer a{
+  text-decoration: none;
+  color: #f5f9ee;
+}
+
+.ProductListContainer a:hover{
+  text-decoration: underline;
 }
